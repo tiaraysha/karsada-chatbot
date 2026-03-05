@@ -89,7 +89,7 @@ const ChatBot = ({ webhookUrl = import.meta.env.VITE_KARSADA_WEBHOOK_URL, chatBo
       </button>
 
       {/* Chatbot */}
-      <div className={`fixed bottom-28 right-6 w-[350px] md:w-[400px] h-[550px] bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.2)] flex flex-col transition-all duration-300 z-40 overflow-hidden ${
+      <div className={`fixed bottom-28 right-6 w-[21.22%] md:w-[400px] h-[49.38%] bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.2)] flex flex-col transition-all duration-300 z-40 overflow-hidden ${
         isOpen ? 'scale-100 opacity-100 translate-y-0' : 'scale-75 opacity-0 translate-y-10 pointer-events-none'
       }`}>
         
