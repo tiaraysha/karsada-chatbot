@@ -128,7 +128,7 @@ const ChatBot = ({ webhookUrl = import.meta.env.VITE_KARSADA_WEBHOOK_URL, chatBo
           {isLoading && (
             <div className="flex justify-start">
               <div className="bg-gray-200 px-4 py-2 rounded-full text-xs text-gray-500 animate-bounce">
-                Sedang mengetik...
+                Sedang mengetik....
               </div>
             </div>
           )}
