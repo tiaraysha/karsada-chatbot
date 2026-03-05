@@ -36,10 +36,16 @@ const ChatBot = ({ webhookUrl = import.meta.env.VITE_KARSADA_WEBHOOK_URL, chatBo
       formData.append('message', message);
       formData.append('user', userName);
 
-      const response = await fetch(webhookUrl, {
-        method: 'POST',
-        body: formData,
-      });
+    const response = await fetch(webhookUrl, {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+        message: message,
+        user: userName,
+    }),
+    });
 
       if (response.ok) {
         const text = await response.text();
